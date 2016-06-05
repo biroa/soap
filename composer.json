@@ -1,0 +1,28 @@
+{
+  "name": "Framework",
+  "description": "Framework test",
+  "keywords": ["PHP", "Framework"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adam Biro",
+      "email": "adam.biro@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "filp/whoops": "^2.1",
+    "symfony/var-dumper": "^3.1",
+    "whoops/soap": "^1.0",
+    "patricklouys/http": ">=1.1.0",
+    "nikic/fast-route": "^1.0",
+    "rdlowrey/auryn": "^1.4",
+    "mustache/mustache": "^2.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "biroa\\": "src/"
+    }
+  }
+}
