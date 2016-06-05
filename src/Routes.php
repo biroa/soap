@@ -1,8 +1,8 @@
-<?php
+<?php namespace biroa;
 
 return [
-    ['GET', '/', ['biroa\Controllers\HomeController', 'show']],
-    ['POST', '/result', ['biroa\Controllers\ResultController', 'proceed']],
+    [ 'GET', '/', [ 'biroa\Controllers\HomeController', 'show' ] ],
+    [ 'POST', '/result', [ 'biroa\Controllers\ResultController', 'proceed' ] ],
     //['GET', '/{slug}', ['biroa\Controllers\PageController', 'show']],
 
 

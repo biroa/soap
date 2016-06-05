@@ -1,13 +1,16 @@
 <?php namespace biroa;
 
 use FastRoute\Dispatcher;
+use FastRoute\RouteCollector;
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Run;
 
+//Load composer generated autoload
 require __DIR__ . '/../vendor/autoload.php';
 
 error_reporting(E_ALL);
 
+//Environment
 $environment = 'development';
 
 /**
@@ -32,7 +35,7 @@ foreach ( $response->getHeaders() as $header ) {
     header($header, false);
 }
 
-$routeDefinitionCallback = function (\FastRoute\RouteCollector $r) {
+$routeDefinitionCallback = function (RouteCollector $r) {
     $routes = include('Routes.php');
     foreach ($routes as $route) {
         $r->addRoute($route[0], $route[1], $route[2]);

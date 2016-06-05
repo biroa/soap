@@ -1,6 +1,9 @@
-<?php
+<?php namespace biroa;
 
-$injector = new \Auryn\Injector;
+use Auryn\Injector;
+use Mustache_Loader_FilesystemLoader;
+
+$injector = new Injector;
 
 $injector->alias('Http\Request', 'Http\HttpRequest');
 $injector->share('Http\HttpRequest');
