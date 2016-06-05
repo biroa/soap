@@ -29,12 +29,12 @@
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-8">
-        <form role="form">
+        <form role="form" action="/result" method="post">
             <label for="keywords">Search Query</label>
             <div class="input-group">
-                <input type="text" class="form-control" id="keywords">
+                <input type="text" class="form-control" name="keyword" id="keywords">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Go!</button>
+                    <button class="btn btn-default" type="submit">Go!</button>
                 </span>
             </div>
 

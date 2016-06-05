@@ -2,8 +2,8 @@
 
 return [
     ['GET', '/', ['biroa\Controllers\HomeController', 'show']],
-    ['GET', '/result', ['biroa\Controllers\ResultController', 'show']],
-    ['GET', '/{slug}', ['biroa\Controllers\PageController', 'show']],
+    ['POST', '/result', ['biroa\Controllers\ResultController', 'proceed']],
+    //['GET', '/{slug}', ['biroa\Controllers\PageController', 'show']],
 
 
 ];

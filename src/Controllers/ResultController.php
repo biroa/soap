@@ -18,10 +18,9 @@ class ResultController
         $this->renderer = $renderer;
     }
 
-    public function show()
-    {
-        var_dump('test');
-        //$html = $this->renderer->render('Home.template', $data);
-        //$this->response->setContent($html);
+
+    public function proceed(){
+
+        var_dump($this->request->getParameter('keyword'));
     }
 }
