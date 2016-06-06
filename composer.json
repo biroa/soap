@@ -19,7 +19,8 @@
     "nikic/fast-route": "^1.0",
     "rdlowrey/auryn": "^1.4",
     "mustache/mustache": "^2.10",
-    "vlucas/phpdotenv": "^2.2"
+    "vlucas/phpdotenv": "^2.2",
+    "phpdocumentor/phpdocumentor": "^2.9"
   },
   "autoload": {
     "psr-4": {
