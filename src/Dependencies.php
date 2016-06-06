@@ -5,6 +5,7 @@ use Mustache_Loader_FilesystemLoader;
 
 $injector = new Injector;
 
+$injector->define('ResultController', ['ParserInterface' => 'ParserHelper']);
 $injector->alias('Http\Request', 'Http\HttpRequest');
 $injector->share('Http\HttpRequest');
 $injector->define('Http\HttpRequest', [
