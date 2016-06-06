@@ -2,6 +2,10 @@
 
 use Auryn\Injector;
 use Mustache_Loader_FilesystemLoader;
+use Dotenv\Dotenv;
+
+$dotenv = new Dotenv('../');
+$dotenv->load();
 
 $injector = new Injector;
 
